@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.99" prefHeight="601.0" prefWidth="999.0" style="-fx-background-color: #000;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllHome">
+   <children>
+      <ImageView fitHeight="480.0" fitWidth="370.0" layoutX="560.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/tatto6.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnGuardar" layoutX="115.0" layoutY="464.0" mnemonicParsing="false" onMouseClicked="#clickGuardar" prefHeight="46.0" prefWidth="367.0" style="-fx-background-color: transparent; -fx-border-color: #fff;" text="S A V E" textFill="WHITE">
+         <font>
+            <Font size="22.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text fill="WHITE" layoutX="116.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client" wrappingWidth="69.3671875">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="115.0" layoutY="278.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Product" wrappingWidth="119.3671875">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtTatto" layoutX="115.0" layoutY="388.0" prefHeight="46.0" prefWidth="367.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Text fill="WHITE" layoutX="115.0" layoutY="374.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Number Of Tattoos" wrappingWidth="168.3671875">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <ComboBox fx:id="cmbClient" layoutX="112.0" layoutY="192.0" prefHeight="46.0" prefWidth="367.0" />
+      <ComboBox fx:id="cmbProduct" layoutX="112.0" layoutY="289.0" prefHeight="46.0" prefWidth="367.0" />
+      <Pane prefHeight="54.0" prefWidth="999.0" style="-fx-background-color: #232323;">
+         <children>
+            <Button fx:id="home" layoutX="366.0" layoutY="9.0" mnemonicParsing="false" onAction="#opensHome" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-border-color: #fff; -fx-border-width: 0px 0px 2px 0px;" text="H O M E" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="sales" layoutX="529.0" layoutY="9.0" mnemonicParsing="false" onAction="#opensVentas" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-border-color: #B65513; -fx-border-width: 0px 0px 2px 0px;" text="S A L E S" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="productos" layoutX="679.0" layoutY="9.0" mnemonicParsing="false" onAction="#opensProductos" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-border-color: #fff; -fx-border-width: 0px 0px 2px 0px;" text="P R O D U C T S" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="clientes" layoutX="836.0" layoutY="9.0" mnemonicParsing="false" onAction="#opensClientes" prefHeight="36.0" prefWidth="123.0" style="-fx-background-color: transparent; -fx-border-color: #fff; -fx-border-width: 0px 0px 2px 0px;" text="C L I E N T S" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="36.0" fitWidth="65.0" layoutX="22.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../img/Maquina.png" />
+               </image>
+            </ImageView>
+            <Text fill="WHITE" layoutX="68.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STYLE">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+            <Text fill="#f4850b" layoutX="126.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TATTO">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</Pane>
